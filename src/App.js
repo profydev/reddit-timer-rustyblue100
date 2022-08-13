@@ -1,8 +1,13 @@
 import React from 'react';
 import 'normalize.css';
+import Header from './components/Header';
 
 function App() {
-  return <div>App Placeholder</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;
