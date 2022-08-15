@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const HeaderNav = styled.header`
   svg {
-    margin-top: -3px;
+    margin-top: 0px;
   }
   display: flex;
   justify-content: space-between;
@@ -23,8 +23,16 @@ const MenuItem = styled.ul`
   list-style: none;
   gap: 25px;
   font-size: 16px;
-  font-color: #636363;
+  color: #636363;
   font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: #636363;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const Header = () => (
@@ -93,8 +101,12 @@ const Header = () => (
       <li>
         <Link to="/search">Search</Link>
       </li>
-      <li>How it works</li>
-      <li>About</li>
+      <li>
+        <Link to={{ pathname: '/', hash: '#how-it-works' }}>How it works</Link>
+      </li>
+      <li>
+        <Link to={{ pathname: '/', hash: '#about' }}>About</Link>
+      </li>
     </MenuItem>
   </HeaderNav>
 );
