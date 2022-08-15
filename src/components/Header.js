@@ -99,7 +99,7 @@ const Header = () => (
     </Link>
     <MenuItem>
       <li>
-        <Link to="/search">Search</Link>
+        <Link to="/search/javascript">Search</Link>
       </li>
       <li>
         <Link to={{ pathname: '/', hash: '#how-it-works' }}>How it works</Link>
